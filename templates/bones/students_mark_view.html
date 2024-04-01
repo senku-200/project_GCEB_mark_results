@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark</title>
+    <link rel="stylesheet" href="../skin/students_marks.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="">
+        <i class="fa-solid fa-bars header_menu_icon"></i>
+        <div class="header_profile">
+            <i class="fa-solid fa-user profile_img"></i>
+            <p>stu name</p>
+        </div>
+    </header>
+    <aside class="">
+        <nav class="aside_navbar">
+            <p>GCEB</p>
+            <p>MR</p>
+        </nav>
+        <div class="user_profile">
+            <div class="user_profile_con">
+                <i class="fa-solid fa-user profile_img"></i>
+                <div class="user_profile_details">
+                    <div class="name_con">
+                        <p class="fname">kishoor</p>
+                        <p class="lastname">v</p>
+                    </div>
+                    <div class="status">
+                        <span class="status_circle"></span>
+                        <p>Student</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav_dialogue">
+            <p>main navigation</p>
+        </div>
+        <div class="navigtion_con">
+            <div class="navigators" onclick="change_color(this)">
+                <a href="">
+                    <i class="fa-solid fa-gauge-high nav_icons"></i>
+                    <p class="navigation_name">dashboard</p>
+                </a>
+            </div>
+            <div class="navigators" onclick="change_color(this)"><a href=""><i class="fa-solid fa-bullhorn nav_icons"></i><p class="navigation_name">circular</p></a></div>
+            <div class="navigators" onclick="change_color(this)"><a href=""><i class="fa-solid fa-table-cells nav_icons"></i><p class="navigation_name">view</p></a></div>
+            <div class="navigators" onclick="change_color(this)"><a href=""><i class="fa-solid fa-table nav_icons"></i><p class="navigation_name">timetable</p></a></div>
+            <div class="navigators" onclick="change_color(this)"><a href=""><i class="fa-solid fa-clipboard-user nav_icons"></i><p class="navigation_name">attendence & marks</p></a></div>
+            <div class="navigators" onclick="change_color(this)"><a href=""><i class="fa-solid fa-key nav_icons"></i><p class="navigation_name">change password</p></a></div>
+            <div class="navigators" onclick="change_color(this)"><a href=""><i class="fa-solid fa-arrow-right-from-bracket nav_icons"></i><p class="navigation_name">logout</p></a></div>
+        </div>
+    </aside>
+    <main>
+        <section class="heading">
+            <p>Attendance & Mark</p>
+        </section>
+        <section id="semester_yr_section">
+            <label for="custom_select" hidden>select the semester</label>
+            <select id="custom_select" name="semester">
+                <option value="" selected disabled>select the semester year</option>
+                <option value="july24-nov24">July 2023 - Nov-2023</option>
+                <option value="dec24-jun24">Dec 2023 - Jun-2023</option>
+                <option value="july23-nov23">July 2022 - Nov-2022</option>
+                <option value="dec23-jun23">Dec 2022 - Jun-2022</option>
+            </select>
+        </section>
+        <section id="marks_container">
+            <article id="student_details">
+                <div id="details_left">
+                    <div class="stu_input_field">
+                        <label for="roll_number">roll number</label>
+                        <input type="text" id="roll_number" value="61072114123" disabled>
+                    </div>
+                    <div class="stu_input_field">
+                        <label for="branch">brach</label>
+                        <input type="text" id="branch" value="B.E MECHANICAL ENGINEERING" disabled>
+                    </div>
+                    <div class="stu_input_field">
+                        <label for="college">college</label>
+                        <input type="text" id="college" value="GOVERNMENT COLLEGE OF ENGINEERING BARGUR" disabled>
+                    </div>
+                    
+                </div>
+                <div id="details_right">
+                    <div class="stu_input_field">
+                        <label for="name">name</label>
+                        <input type="text" id="name" value="kishoor v" disabled>
+                    </div>
+                    <div id="sem_details">
+                        <div class="stu_input_field">
+                            <label for="semester">semester</label>
+                            <input type="text" id="semester" value="1" disabled>
+                        </div>
+                        <div class="stu_input_field">
+                            <label for="regulations">regulations</label>
+                            <input type="text" id="regulations" value="2020" disabled>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <div id="choice_format">
+                <div id="choice_mark"><p>marks</p></div>
+                <div id="choice_profile"><p>profile</p></div>
+            </div>
+            <article id="mark_area">
+                <table id="mark_table">
+                    <thead>
+                        <tr>
+                            <th>s.no.</th>
+                            <th>course code</th>
+                            <th>course name</th>
+                            <th>att.(%)</th>
+                            <th>asgmt. 1</th>
+                            <th>asgmt. 2</th>
+                            <th>asgmt. 3</th>
+                            <th>assess. 1</th>
+                            <th>assess. 2</th>
+                            <th>assess. 3</th>
+                            <th>i. assess</th>
+                            <th>grade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>BS5161</td>
+                            <td>BASIC SCIENCES LABORATORY</td>
+                            <td>92</td>
+                            <td>88</td>
+                            <td>85</td>
+                            <td>92</td>
+                            <td>89</td>
+                            <td>90</td>
+                            <td>90</td>
+                            <td>53</td>
+                            <td>A+</td>
+                        </tr>
+                        <tr class="ws_row">
+                            <td>2</td>
+                            <td>CY5151</td>
+                            <td>ENGINEERING CHEMISTRY</td>
+                            <td>92</td>
+                            <td>88</td>
+                            <td>85</td>
+                            <td>92</td>
+                            <td>89</td>
+                            <td>90</td>
+                            <td>90</td>
+                            <td>53</td>
+                            <td>A+</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>GE5151</td>
+                            <td>ENGINEERING GRAPHICS</td>
+                            <td>92</td>
+                            <td>88</td>
+                            <td>85</td>
+                            <td>92</td>
+                            <td>89</td>
+                            <td>90</td>
+                            <td>90</td>
+                            <td>53</td>
+                            <td>A+</td>
+                        </tr>
+                        <tr class="ws_row">
+                            <td>4</td>
+                            <td>GE5154</td>
+                            <td>HERITAGE OF TAMILS</td>
+                            <td>92</td>
+                            <td>88</td>
+                            <td>85</td>
+                            <td>92</td>
+                            <td>89</td>
+                            <td>90</td>
+                            <td>90</td>
+                            <td>53</td>
+                            <td>A+</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>GE5162</td>
+                            <td>WORKSHOP PRACTICES LABORATORY</td>
+                            <td>92</td>
+                            <td>88</td>
+                            <td>85</td>
+                            <td>92</td>
+                            <td>89</td>
+                            <td>90</td>
+                            <td>90</td>
+                            <td>53</td>
+                            <td>A+</td>
+                        </tr>
+                        <tr class="ws_row">
+                            <td>6</td>
+                            <td>GE5163</td>
+                            <td>ENGLISH LABORATORY</td>
+                            <td>92</td>
+                            <td>88</td>
+                            <td>85</td>
+                            <td>92</td>
+                            <td>89</td>
+                            <td>90</td>
+                            <td>90</td>
+                            <td>53</td>
+                            <td>A+</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>HS5153</td>
+                            <td>TECHNICAL ENGLISH</td>
+                            <td>92</td>
+                            <td>88</td>
+                            <td>85</td>
+                            <td>92</td>
+                            <td>89</td>
+                            <td>90</td>
+                            <td>90</td>
+                            <td>53</td>
+                            <td>A+</td>
+                        </tr>
+                        <tr class="ws_row">
+                            <td>8</td>
+                            <td>MA5158</td>
+                            <td>ENGINEERING MATHEMATICS - I</td>
+                            <td>92</td>
+                            <td>88</td>
+                            <td>85</td>
+                            <td>92</td>
+                            <td>89</td>
+                            <td>90</td>
+                            <td>90</td>
+                            <td>53</td>
+                            <td>A+</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>PH5151</td>
+                            <td>ENGINEERING PHYSICS</td>
+                            <td>92</td>
+                            <td>88</td>
+                            <td>85</td>
+                            <td>92</td>
+                            <td>89</td>
+                            <td>90</td>
+                            <td>90</td>
+                            <td>53</td>
+                            <td>A+</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="grade_rep">
+                    <thead>
+                        <tr>
+                            <th>grade representation</th>
+                            <th>Not published</th>
+                            <th>published</th>
+                            <th>withheld</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>color</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="grade_indication">
+                    <thead>
+                        <tr>
+                            <th>letter grade</th>
+                            <th>o</th>
+                            <th>a+</th>
+                            <th>a</th>
+                            <th>b+</th>
+                            <th>b</th>
+                            <th>c</th>
+                            <th>RA/U</th>
+                            <th>SA</th>
+                            <th>-</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>letter grade</td>
+                            <td>outstanding</td>
+                            <td>excellent</td>
+                            <td>very good</td>
+                            <td>good</td>
+                            <td>average</td>
+                            <td>satisfactory</td>
+                            <td>reAppear</td>
+                            <td>shortage of attendence</td>
+                            <td>withheld</td>
+                        </tr>
+                        <tr>
+                            <td>grade point</td>
+                            <td>10</td>
+                            <td>9</td>
+                            <td>8</td>
+                            <td>7</td>
+                            <td>6</td>
+                            <td>5</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+    </main>
+    <footer class="">
+        <p><span>Copyright</span> © 2024 <a href="">MR</a>. All rights reserved.</p>
+    </footer>
+</body>
+<script src="../movement/student_marks.js"></script>
+</html>

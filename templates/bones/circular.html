@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>circular</title>
+    <link rel="stylesheet" href="../skin/students_dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="">
+        <i class="fa-solid fa-bars header_menu_icon"></i>
+        <div class="header_profile">
+            <i class="fa-solid fa-user profile_img"></i>
+            <p>stu name</p>
+        </div>
+    </header>
+    <aside class="">
+        <nav class="aside_navbar">
+            <p>GCEB</p>
+            <p>MR</p>
+        </nav>
+        <div class="user_profile">
+            <div class="user_profile_con">
+                <i class="fa-solid fa-user profile_img"></i>
+                <div class="user_profile_details">
+                    <div class="name_con">
+                        <p class="fname">kishoor</p>
+                        <p class="lastname">v</p>
+                    </div>
+                    <div class="status">
+                        <span class="status_circle"></span>
+                        <p>Student</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav_dialogue">
+            <p>main navigation</p>
+        </div>
+        <div class="navigtion_con">
+            <div class="navigators" onclick="change_color(this)">
+                <a href="">
+                    <i class="fa-solid fa-gauge-high nav_icons"></i>
+                    <p class="navigation_name">dashboard</p>
+                </a>
+            </div>
+            <div class="navigators circular_navigator" onclick="change_color(this)">
+                <a href=""><i class="fa-solid fa-bullhorn nav_icons"></i>
+                <p class="navigation_name">circular</p></a></div>
+            <div class="navigators" onclick="change_color(this)"><a href=""><i class="fa-solid fa-table-cells nav_icons"></i><p class="navigation_name">view</p></a></div>
+            <div class="navigators" onclick="change_color(this)"><a href=""><i class="fa-solid fa-table nav_icons"></i><p class="navigation_name">timetable</p></a></div>
+            <div class="navigators" onclick="change_color(this)"><a href=""><i class="fa-solid fa-clipboard-user nav_icons"></i><p class="navigation_name">attendence & marks</p></a></div>
+            <div class="navigators" onclick="change_color(this)"><a href=""><i class="fa-solid fa-key nav_icons"></i><p class="navigation_name">change password</p></a></div>
+            <div class="navigators" onclick="change_color(this)"><a href=""><i class="fa-solid fa-arrow-right-from-bracket nav_icons"></i><p class="navigation_name">logout</p></a></div>
+        </div>
+    </aside>
+    <main class="">
+        <section id="circular_sec_1">
+            <p class="heading">Circular</p>
+            <article>
+                <i class="fa-solid fa-note-sticky"></i>
+                <p>Topic</p>
+            </article>
+        </section>
+        <section id="cir_content">
+            <article>
+                <div class="circular_short_wrap">
+                    <div class="left_content">
+                        <i class="fa-solid fa-eye collapse_hidden"></i>
+                        <i class="fa-solid fa-eye-slash expand_hidden"></i>
+                        <div class="content_wrap">
+                            <p class="content_title">Schedule for Course Enrollment/Registration - jan- may 2024</p>
+                            <p class="content_sub">by admin Sun fri 18, 2024 02:39pm</p>
+                        </div>
+                    </div>
+                    <div class="right_content">
+                        <div class="user_profile">
+                            <div class="user_profile_con">
+                                <i class="fa-solid fa-user profile_img"></i>
+                                <div class="user_profile_details">
+                                    <div class="name_con">
+                                        <p class="fname">kishoor</p>
+                                        <p class="lastname">v</p>
+                                    </div>
+                                    <div class="status">
+                                        <span class="status_circle"></span>
+                                        <p>Student</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden_content">
+                    <div class="user_profile">
+                        <div class="user_profile_con">
+                            <i class="fa-solid fa-user profile_img"></i>
+                            <div class="user_profile_details">
+                                <div class="name_con">
+                                    <p class="fname">kishoor</p>
+                                    <p class="lastname">v</p>
+                                </div>
+                                <div class="status">
+                                    <span class="status_circle"></span>
+                                    <p>Student</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                    <p class="hidden_content_p">
+                        UG Programme - Course Enrollment/Registration for this Semester jan - may 2024 is scheduled on 10th jan 2024 (Monday) for GCEB.<br>
+                        Timing :<br>
+                        for 7th Semester from 11.00 AM to 1.00 PM, <br>
+                        5th Semester from 1.00 PM to 3.00 PM , <br>
+                        3rd Semester from 3.00 PM to 5.00 PM.<br>
+                    </p>
+                </div>
+            </article>
+            <article>
+                <div class="circular_short_wrap">
+                    <div class="left_content">
+                        <i class="fa-solid fa-eye collapse_hidden"></i>
+                        <i class="fa-solid fa-eye-slash expand_hidden"></i>
+                        <div class="content_wrap">
+                            <p class="content_title">Schedule for Course Enrollment/Registration - jan- may 2024</p>
+                            <p class="content_sub">by admin Sun fri 18, 2024 02:39pm</p>
+                        </div>
+                    </div>
+                    <div class="right_content">
+                        <div class="user_profile">
+                            <div class="user_profile_con">
+                                <i class="fa-solid fa-user profile_img"></i>
+                                <div class="user_profile_details">
+                                    <div class="name_con">
+                                        <p class="fname">kishoor</p>
+                                        <p class="lastname">v</p>
+                                    </div>
+                                    <div class="status">
+                                        <span class="status_circle"></span>
+                                        <p>Student</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden_content">
+                    <div class="user_profile">
+                        <div class="user_profile_con">
+                            <i class="fa-solid fa-user profile_img"></i>
+                            <div class="user_profile_details">
+                                <div class="name_con">
+                                    <p class="fname">kishoor</p>
+                                    <p class="lastname">v</p>
+                                </div>
+                                <div class="status">
+                                    <span class="status_circle"></span>
+                                    <p>Student</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                    <p class="hidden_content_p">
+                        UG Programme - Course Enrollment/Registration for this Semester jan - may 2024 is scheduled on 10th jan 2024 (Monday) for GCEB.<br>
+                        Timing :<br>
+                        for 7th Semester from 11.00 AM to 1.00 PM, <br>
+                        5th Semester from 1.00 PM to 3.00 PM , <br>
+                        3rd Semester from 3.00 PM to 5.00 PM.<br>
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="">
+        <p><span>Copyright</span> © 2024 <a href="">MR</a>. All rights reserved.</p>
+    </footer>
+</body>
+<script src="../movement/circular.js"></script>
+</html>       
