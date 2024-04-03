@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="../skin/staff_dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="">
+        <i class="fa-solid fa-bars header_menu_icon"></i>
+        <div class="header_profile">
+            <i class="fa-solid fa-user profile_img"></i>
+            <p>faculty name</p>
+        </div>
+    </header>
+    <aside class="">
+        <nav class="aside_navbar">
+            <p>GCEB</p>
+            <p>MR</p>
+        </nav>
+        <div class="user_profile">
+            <div class="user_profile_con">
+                <i class="fa-solid fa-user profile_img"></i>
+                <div class="user_profile_details">
+                    <div class="name_con">
+                        <p class="fname">faculty</p>
+                        <p class="lastname">name</p>
+                    </div>
+                    <div class="status">
+                        <span class="status_circle"></span>
+                        <p>Student</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav_dialogue">
+            <p>main navigation</p>
+        </div>
+        <div class="navigtion_con">
+            <div class="navigators" onclick="change_color(this)">
+                <a href="">
+                    <i class="fa-solid fa-gauge-high nav_icons"></i>
+                    <p class="navigation_name">dashboard</p>
+                </a>
+            </div>
+            <div class="navigators" onclick="change_color(this)">
+                <a href=""><i class="fa-solid fa-bullhorn nav_icons"></i><p class="navigation_name">circular</p></a></div>
+            <div class="navigators" onclick="change_color(this)"><a href=""><i class="fa-solid fa-table-cells nav_icons"></i><p class="navigation_name">view</p></a></div>
+            <div class="navigators" onclick="change_color(this)"><a href=""><i class="fa-solid fa-table nav_icons"></i><p class="navigation_name">timetable</p></a></div>
+            <div class="navigators" onclick="change_color(this)"><a href=""><i class="fa-solid fa-clipboard-user nav_icons"></i><p class="navigation_name">attendence & marks</p></a></div>
+            <div class="navigators" onclick="change_color(this)"><a href=""><i class="fa-solid fa-key nav_icons"></i><p class="navigation_name">change password</p></a></div>
+            <div class="navigators" onclick="change_color(this)"><a href=""><i class="fa-solid fa-arrow-right-from-bracket nav_icons"></i><p class="navigation_name">logout</p></a></div>
+        </div>
+    </aside>
+    <main>
+        <section>
+            <p>Faculty Dashboard</p>
+        </section>
+        <section id="quick_navigation_container">
+            <article class="quick_nav_head">
+                <p>Quick Navigation</p>
+            </article>
+            <article id="quick_navigation">
+                <div class="quick_navigators">
+                    <div class="quick_nav_i_con">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </div>
+                    <div class="quick_nav_name">
+                        <p>circular</p>
+                        <p>circular</p>
+                    </div>
+                </div>
+                <div class="quick_navigators">
+                    <div class="quick_nav_i_con">
+                    <i class="fa-solid fa-table"></i></div>
+                    <div class="quick_nav_name">
+                        <p>Staff</p>
+                        <p>Time Table</p>
+                    </div>
+                </div>
+                <div class="quick_navigators">
+                    <div class="quick_nav_i_con"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="quick_nav_name">
+                        <p>Staff</p>
+                        <p>Student list</p>
+                    </div>
+                </div>
+                <div class="quick_navigators">
+                    <div class="quick_nav_i_con"><i class="fa-solid fa-clipboard-user"></i></div>
+                    <div class="quick_nav_name">
+                        <p>staff</p>
+                        <p>attendance & marks</p>
+                    </div>
+                </div>
+                <div class="quick_navigators">
+                    <div class="quick_nav_i_con"><i class="fa-solid fa-arrow-right-to-bracket"></i></div>
+                    <div class="quick_nav_name">
+                        <p>staff</p>
+                        <p>mark entry</p>
+                    </div>
+                </div>
+                <div class="quick_navigators">
+                    <div class="quick_nav_i_con"><i class="fa-solid fa-arrow-right-to-bracket"></i></div>
+                    <div class="quick_nav_name">
+                        <p>staff</p>
+                        <p>supplement Attendance & marks</p>
+                    </div>
+                </div>
+                <div class="quick_navigators">
+                    <div class="quick_nav_i_con"><i class="fa-solid fa-arrow-right-to-bracket"></i></div>
+                    <div class="quick_nav_name">
+                        <p>staff</p>
+                        <p>open day-attendance & marks</p>
+                    </div>
+                </div>
+                <div class="quick_navigators">
+                    <div class="quick_nav_i_con"><i class="fa-solid fa-arrow-right-to-bracket"></i></div>
+                    <div class="quick_nav_name">
+                        <p>staff</p>
+                        <p>Re-examintaion mark entry</p>
+                    </div>
+                </div>
+                <div class="quick_navigators">
+                    <div class="quick_nav_i_con"><i class="fa-solid fa-key"></i></div>
+                    <div class="quick_nav_name">
+                        <p>password</p>
+                        <p>change password</p>
+                    </div>
+                </div>
+                <div class="quick_navigators">
+                    <div class="quick_nav_i_con"><i class="fa-solid fa-arrow-right-from-bracket"></i></div>
+                    <div class="quick_nav_name">
+                        <p>logout</p>
+                        <p>logout</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article>
+                <p>TimeTable</p>
+                <button type="button">
+                    <i class="fa-solid fa-download"></i>
+                    <p>download PDF</p>
+                </button>
+            </article>
+            <table>
+                <thead>
+                    <tr>
+                        <th>day / hour</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>6</th>
+                        <th>7</th>
+                        <th>8</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="cell-pri_green">monday</td>
+                        <td></td>
+                        <td class="cell-per_green">am</td>
+                        <td class="cell-per_green">am</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="cell-pri_green">tuesday</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="cell-pri_green">wednesday</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="cell-per_green">am</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="cell-pri_green">thursday</td>
+                        <td class="cell-per_green">am</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="cell-pri_green">friday</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="cell-pri_green">saturday</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="cell-pri_green">sunday</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="">
+        <p><span>Copyright</span> © 2024 <a href="">MR</a>. All rights reserved.</p>
+    </footer>
+</body>
+<script src="../movement/faculty_dash.js"></script>
+</html>
